@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>    
+    <style>
+    div{ 
+        height:300px;
+        width:450px;
+        border-style:groove;
+        border: width 5px;;
+        border-color:black;
+        background-color:lightgray;
+       }
+      </style>
+  </head>
+  <body>
+    <center>
+    <div>
+      <h1><center>Calculator</center></h1>
+      <form name='myForm'>
+        Number1:
+        <input type="number" id="num1" name="num1" />
+        <br />
+        <br />
+        Number2:
+        <input type="number" id="num2" name="num2" />
+        <br />
+        <br />
+        <select id="operator">
+          <option value="+">Add</option>
+          <option value="-">Substract</option>
+          <option value="/">Divide</option>
+          <option value="*">Multiply</option>
+          <option value="%">Modulus</option>
+        </select>
+        <button class='button' type='button'>Submit</button>
+        <input type="reset"/>
+        <br />
+        <br />
+        Result:        
+        <input type="text" id="result" />           
+        <p id="ans"></p>
+      </form>
+      
+    </div>
+    <script src="./task.js"></script>
+       
+  </body>
+</html>
